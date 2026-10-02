@@ -1,15 +1,15 @@
-site_name: Change the site name in mkdocs.yml
-site_description: "Template for the documentation at FELIX Printers"
+site_name: "FELIX Orca docs"
+site_description: "Documentation for FELIX Orca docs"
 site_author: "FELIX Robotics BV"
 #==================================================================
 # change this once the docs is deployed to reflect the name
 ## EXAMPLE: https://felixroboticsbv.github.io/FELIX-Repo-docs
 
-site_url: https://felixroboticsbv.github.io/FELIX-Docs-Template/
+site_url: https://felixroboticsbv.github.io/FELIX-Orca-docs/
 
 #==================================================================
 
-repo_name: "FELIX-Docs-Template/"
+repo_name: "FELIX-Orca-docs"
 use_directory_urls: true
 
 plugins:
