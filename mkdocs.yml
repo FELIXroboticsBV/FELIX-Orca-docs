@@ -1,0 +1,63 @@
+site_name: Change the site name in mkdocs.yml
+site_description: "Template for the documentation at FELIX Printers"
+site_author: "FELIX Robotics BV"
+#==================================================================
+# change this once the docs is deployed to reflect the name
+## EXAMPLE: https://felixroboticsbv.github.io/FELIX-Repo-docs
+
+site_url: https://felixroboticsbv.github.io/FELIX-Docs-Template/
+
+#==================================================================
+
+repo_name: "FELIX-Docs-Template/"
+use_directory_urls: true
+
+plugins:
+  - search
+  - i18n:
+      docs_structure: suffix # or "folder"
+      languages:
+        - locale: en
+          default: true
+          name: English
+          build: true
+        - locale: nl
+          name: Netherlands
+          build: true
+        #- locale: du
+        #  name: Deutschland
+        #  build: true
+        #- locale: cz
+        #  name: Czech
+        #  build: true
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.blocks.caption
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+copyright: <h3><i><u><a target="_blank" href="https://felixprinters.com/">© 2026 FELIX Robotics BV</a></u>. All Rights Reserved.
+
+theme:
+  name: material
+  features:
+    - content.code.copy
+    - content.code.select
+
+  logo: assets/logo.png
+  palette:
+    - scheme: slate
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - scheme: indigo
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode

@@ -1,0 +1,49 @@
+# RUNS automatically on the first commit and sets up the mkdocs.yml so that all the values are correctly set up.
+
+name: Template setup
+
+on:
+  push:
+    branches: [main, master]
+  workflow_dispatch: # lets you run it manually if needed
+
+permissions:
+  contents: write
+
+jobs:
+  setup:
+    # Never run inside the template repo itself
+    if: github.repository != 'felixroboticsbv/FELIX-Docs-Template'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check if setup is still needed
+        id: check
+        run: |
+          if grep -q "FELIX-Docs-Template" mkdocs.yml; then
+            echo "needed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Update mkdocs.yml
+        if: steps.check.outputs.needed == 'true'
+        run: |
+          REPO="${GITHUB_REPOSITORY#*/}"            # e.g. FELIX-Repo-docs
+          OWNER="${GITHUB_REPOSITORY_OWNER,,}"      # lowercase for github.io
+          TITLE="${REPO//-/ }"                      # FELIX Repo docs
+          sed -i \
+            -e "s|^site_name:.*|site_name: \"${TITLE}\"|" \
+            -e "s|^site_description:.*|site_description: \"Documentation for ${TITLE}\"|" \
+            -e "s|^site_url:.*|site_url: https://${OWNER}.github.io/${REPO}/|" \
+            -e "s|^repo_name:.*|repo_name: \"${REPO}\"|" \
+            -e "s|^repo_url:.*|repo_url: https://github.com/${GITHUB_REPOSITORY}|" \
+            mkdocs.yml
+          cat mkdocs.yml | head -20
+
+      - name: Commit changes
+        if: steps.check.outputs.needed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git commit -am "chore: configure docs for ${GITHUB_REPOSITORY#*/}"
+          git push
