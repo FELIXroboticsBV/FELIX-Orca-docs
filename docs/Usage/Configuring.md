@@ -18,7 +18,7 @@ If you added printers you want orca to use, you can use the same drop down menu 
 If you have not added any our printer to the list, please follow [Adding printers guide](Adding%20printers.md)
 
 <figure markdown="span">
-  ![Alt text](../images/filename.png){ width="1000" }
+  ![Alt text](../images/selecting-printer.gif){ width="1000" }
   <figcaption>Printer configuration pop-up</figcaption>
 </figure>
 
@@ -123,4 +123,14 @@ From top to bottom the quality of the print increases but with it, also its prin
 
 ### Food
 
-from the s
+The process of applying various quality controls does not largely differ from the plastic printing. The most important setting is that the supports (structures build by 3D printer in order for the model to not collapse) are disabled.
+
+This is because when printing with food, the shape of hte support structure would most definitely interfere / fuse together with the main product you are about to print which would result in a shape that is not desirable. Another reason to disable the support structures is that unlike plastic, most of the foods od not solidify which means that they require support structure even after they have finished printing.
+
+To select different process configuration, simply click on the process drop-down menu and select choose a level of detail from the options presented.
+
+- FOOD Coarse
+- FOOD Normal
+- FOOD Fine
+
+As withe the plastic printing the quality of the model increases with each quality preset, together with its printing time.
