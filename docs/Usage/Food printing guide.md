@@ -27,6 +27,8 @@ In order to select the correct filament please consult the following table.
 
 The name of the filament is based on the class it is most suited for.
 
+While it is possible to mix and match materials, we do not guarantee the results.
+
 ### Basic Plastic: Plastic Syringe
 
 | Level | Class     | Viscosity (mPa·s) | Examples                      |
