@@ -2,15 +2,20 @@
 
 Slicing is a process of converting your model to the instructions understandable by our printers.
 
-The output of the slicer is a file with a list of instructions and various metadata for the printer called `gcode`. This file has most commonly extension `.gcode` or `.gx`
+The output of the slicer is a file with a list of instructions and various metadata for the printer. This file is called called `gcode` and most commonly contains extension `.gcode` or `.gx`
 
-Thanks to orca this process is as simple as clicking on button.
+Thanks to orca this process is as simple as clicking one button.
 
 Before proceeding with this guide make suer you have your model prepared for slicing. You can learn how to do that in a [Printing guide](./Printing.md)
 
 ---
 
-To slice your model simply click on the slice button on the top right of your screen.
+To slice your model simply click on the `Slice plate` button on the top right of your screen.
+
+<figure markdown="span">
+  ![Alt text](../images/printing-and-slicing/slicing.gif){ width="1000" }
+  <figcaption>Slicing</figcaption>
+</figure>
 
 !!! Warning
 
@@ -18,7 +23,9 @@ To slice your model simply click on the slice button on the top right of your sc
 
 ## Print preview
 
-Once the model is sliced you can press `Tab` on your keyboard or select `Preview` on the top tab bar to examine the paths which your printer will take.
+Once the model is sliced you will be automatically redirected to the preview panel.
+
+If you are not, you can press `Tab` on your keyboard or select `Preview` on the top menu bar to examine the paths which your printer will take.
 
 ### Horizontal slider
 
@@ -34,4 +41,13 @@ Use this slider to examine how the you model will be printed from the inside. Yo
 
 ## Exporting your model
 
-Once you are happy with the g-cd
+Once you are happy with the g-code you can press export to the disk.
+
+This will show you pop-up with the same file browser as when you were importing you model.
+
+This time around, however, you need to navigate to the location on your computer where you want the `.gcode` file to be saved.
+
+<figure markdown="span">
+  ![Alt text](../images/printing-and-slicing/exporting-sliced-model.gif){ width="1000" }
+  <figcaption>Image caption</figcaption>
+</figure>

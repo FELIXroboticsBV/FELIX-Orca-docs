@@ -1,6 +1,6 @@
 # Configuring
 
-In order to start printing you first must select 4 main things
+In order to start printing you first must configure 4 main settings
 
 - Printer
 - Its nozzle size
@@ -26,9 +26,9 @@ If you have not added any our printer to the list, please follow [Adding printer
 
 ### Double nozzle printers
 
-Most of our printers come with two nozzles. Unfortunately, orca does not yet support printers that have two different nozzles, nor does it support intutive selection between various nozzle sizes.
+Most of our printers come with two nozzles. Unfortunately, orca does not yet intutive selection between various nozzle sizes when printer has two or more nozzles available.
 
-To select configuration with different nozzle diameter you need to click on small rectagular icon with the pen right next to the printer`s name.
+To select configuration with different nozzle diameter you need to click on small rectangular icon with the pen right next to the printer`s name.
 
 This will open a small pop-up window where you can see various printer settings.
 
@@ -52,13 +52,13 @@ Only printer with single nozzle is `FOOD Single`. When this printer is selected,
 
 ## Filaments
 
-Thi section is again going to assume that the fillament of the printer which we support was loaded.
+Thi section is again going to assume that the filament of the printer which we support was loaded.
 
 If you have not done so, you can follow `Filament` section of the [Adding printers guide](Adding%20printers.md)
 
 ### Plastic
 
-For a plastic printer we ship various materials presets for different extruder nozzle types. More specifically we support **Brass** and **Hardened steel** variants of the each suited for different extruder type.
+For a plastic printer we ship various materials presets for different extruder nozzle types. More specifically we support **Brass** and **Hardened steel** variants of each suited for different extruder type.
 
 The material can be selected for individual nozzles in the two drop down menus under the **Filament** section. Note that orca uses nozzle _1_ as its default extruder.
 
@@ -66,7 +66,14 @@ The material can be selected for individual nozzles in the two drop down menus u
 
     We have configured our profiles in a way so that you can not select material type which is not supported by the printer.
 
+    For example food filament can not be selected for plastic printer and vise versa
+
 To select the filament click on one of the drop down menus which will show you the drop down with various vendors. However over `FELIX Printers` which will roll up another burger menu through which you can select specific filament type.
+
+<figure markdown="span">
+  ![Alt text](../images/filename.png){ width="1000" }
+  <figcaption>Filament selection double nozzle </figcaption>
+</figure>
 
 For example, when you have a Hardened steel extruded mounted to your printer and you have our premium PLA material you need to select `FELIX Premium PLA Hardened steel` this will configure printing temperatures and all the other settings required for hte successful print.
 
@@ -75,6 +82,11 @@ For example, when you have a Hardened steel extruded mounted to your printer and
 Principle with food printers is the same, however instead of concrete material and extruder type you are selecting food thickness AKA viscosity and syringe type you are using.
 
 For more informtaion visit our [Food printing guide](./Food%20printing%20guide.md). This is the table you can use when selecting correct filament preset for the food printers
+
+<figure markdown="span">
+  ![Alt text](../images/filename.png){ width="1000" }
+  <figcaption>Filament selection food printer </figcaption>
+</figure>
 
 ### Basic Plastic: Plastic Syringe
 
@@ -100,7 +112,7 @@ For more informtaion visit our [Food printing guide](./Food%20printing%20guide.m
 
 ## Processes
 
-Process is another name for quality presets, in other words this is where you (or us) make evaluate the trade off between detailers and quality of the print among other things.
+Process is another name for quality presets, in other words this is where you (or us) evaluate the trade off between details and quality of the print among other things.
 
 ### Plastic
 
@@ -121,6 +133,11 @@ From top to bottom the quality of the print increases but with it, also its prin
 
     So if you our processes do not match your expectations you can always tweak with the layer height value to get to the desired results.
 
+<figure markdown="span">
+  ![Process slection](../images/filename.png){ width="1000" }
+  <figcaption>Process selection plastic</figcaption>
+</figure>
+
 ### Food
 
 The process of applying various quality controls does not largely differ from the plastic printing. The most important setting is that the supports (structures build by 3D printer in order for the model to not collapse) are disabled.
@@ -134,3 +151,8 @@ To select different process configuration, simply click on the process drop-down
 - FOOD Fine
 
 As withe the plastic printing the quality of the model increases with each quality preset, together with its printing time.
+
+<figure markdown="span">
+  ![Alt text](../images/filename.png){ width="1000" }
+  <figcaption>Process selection on food printer</figcaption>
+</figure>

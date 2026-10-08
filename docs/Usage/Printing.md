@@ -1,7 +1,5 @@
 # Printing
 
-> TODO: images / gifs
-
 In this guide we will show you simplified process of importing your model, positioning it on the bed, slicing it and exporting the g-code so that it can be loaded the printer and at the end printed.
 
 ## Configuring the printer
@@ -44,6 +42,11 @@ This will bring file explorere dialog which you can use to browes all files in t
 
 This should close the file broswer window and show you your model inside the orca.
 
+<figure markdown="span">
+  ![Alt text](../images/printing-and-slicing/importing-model.gif){ width="1000" }
+  <figcaption>Importing model</figcaption>
+</figure>
+
 ## Position your model.
 
 Positioning your model on the printing bed is done via several controls also available thought the top tool bar menu.
@@ -53,6 +56,11 @@ Positioning your model on the printing bed is done via several controls also ava
 There are multiple ways how one can position their model on the printing mat.
 
 **Drag and drop** - model can be simply dragged around the printing bed this operation **is default** when the model is selected. While convenient, precision of the placement is not the best.
+
+<figure markdown="span">
+  ![Alt text](../images/printing-and-slicing/positioning-model-drag-and-drop.gif){ width="1000" }
+  <figcaption>Model positioning</figcaption>
+</figure>
 
 **Movement tool**
 
@@ -67,7 +75,7 @@ One movement tool is active you will see movement gizmo (three arrows, one point
 Through the gizmo you can position the model as accurately as possible.
 
 <figure markdown="span">
-  ![Alt text](../images/filename.png){ width="1000" }
+  ![Alt text](../images/printing-and-slicing/positioning-model-translation-gizmo.gif){ width="1000" }
   <figcaption>Showcase of different ways to move your model on the printing mat.</figcaption>
 </figure>
 
@@ -98,7 +106,7 @@ Once you do, rotation gizmos will appear. They will allow you to rotate your obj
 to rotate the object simply drag the desired gizmo in the direction you want to rotate into.
 
 <figure markdown="span">
-  ![Alt text](../images/filename.png){ width="1000" }
+  ![Alt text](../images/printing-and-slicing/rotating-the-model.gif){ width="1000" }
   <figcaption>Video demonstrating rotation </figcaption>
 </figure>
 
@@ -111,12 +119,12 @@ To enter scaling mode, select the icon with small square enclosed by bigger squa
 Gizmos for the scaling operation is resembling ones from the 2D image editors. That is, if you drag the corners of the gizmo you will scale the model uniformly in all directions, or you can choose to scale only in one direction (`X` or `Y`).
 
 <figure markdown="span">
-  ![Alt text](../images/filename.png){ width="1000" }
+  ![Alt text](../images/printing-and-slicing/uniform-scaling-with-gizmos.gif){ width="1000" }
   <figcaption>Uniform scaling by using gizmos</figcaption>
 </figure>
 
 <figure markdown="span">
-  ![Alt text](../images/filename.png){ width="1000" }
+  ![Alt text](../images/printing-and-slicing/non-unifrom-scaling-with-gizmos.gif){ width="1000" }
   <figcaption>Non-uniform scaling by using gizmos</figcaption>
 </figure>
 
@@ -129,8 +137,8 @@ In the small pop-up you can also scale the model as expressed by percentage. By 
 If you want model which is half as small you can simply type 50 to the `X`, `Y`, and `Z` boxes. If younifrom scaling is enabled you can type your scale to any of teh 3 boxes and the scale will be applied to the model as a whole .
 
 <figure markdown="span">
-  ![Alt text](../images/filename.png){ width="1000" }
-  <figcaption>Uniform scaling by using percentage</figcaption>
+  ![Alt text](../images/printing-and-slicing/uniform-and-non-uniform-percentage.gif){ width="1000" }
+  <figcaption>Uniform and non-uniform scaling by using percentage</figcaption>
 </figure>
 
 ### Lay on face
@@ -138,7 +146,7 @@ If you want model which is half as small you can simply type 50 to the `X`, `Y`,
 As the name suggests this tool is used to lay model on one of its faces. Orca detects possible faces you can lay your model onto in case of a pentahedron, for example you can select one of hte five faces on which it will lay.
 
 <figure markdown="span">
-  ![Alt text](../images/filename.png){ width="1000" }
+  ![Alt text](../images/printing-and-slicing/lay-on-face.gif){ width="1000" }
   <figcaption>Using demonstartion of the lay on the face tool </figcaption>
 </figure>
 
@@ -156,4 +164,4 @@ For the full list of features consult orca [wiki page](https://www.orcaslicer.co
 
 !!! Tip
 
-    Best way to learn each of those tools is to simply experiment with them
+    Best way to learn each of those tools is to simply experiment with them.
