@@ -1,53 +1,51 @@
 # Slicing
 
-Slicing is a process of converting your model to the instructions understandable by our printers.
+Slicing is the process of converting your model into instructions that our printers can understand.
 
-The output of the slicer is a file with a list of instructions and various metadata for the printer. This file is called called `gcode` and most commonly contains extension `.gcode` or `.gx`
+The slicer outputs a file containing a list of instructions along with various metadata for the printer. This file is called a G-code file and usually has the extension `.gcode` or `.gx`.
 
-Thanks to orca this process is as simple as clicking one button.
+OrcaSlicer makes this process as simple as clicking a single button.
 
-Before proceeding with this guide make suer you have your model prepared for slicing. You can learn how to do that in a [Printing guide](./Printing.md)
+Before continuing with this guide, make sure your model is prepared for slicing. You can learn how to do that in the [Printing guide](./Printing.md).
 
 ---
 
-To slice your model simply click on the `Slice plate` button on the top right of your screen.
+To slice your model, click the `Slice plate` button in the top-right corner of the screen.
 
 <figure markdown="span">
-  ![Alt text](../images/printing-and-slicing/slicing.gif){ width="1000" }
-  <figcaption>Slicing</figcaption>
+  ![Clicking the Slice plate button in OrcaSlicer](../images/printing-and-slicing/slicing.gif){ width="1000" }
+  <figcaption>Slicing a model</figcaption>
 </figure>
 
-!!! Warning
+!!! warning
 
-    Depending on the complexity and selected process (quality preset) this process might take multiple minutes and in extreme cases even hours.
+    Depending on the complexity of the model and the selected process (quality preset), slicing can take several minutes, and in extreme cases even hours.
 
 ## Print preview
 
-Once the model is sliced you will be automatically redirected to the preview panel.
+Once the model has been sliced, you will automatically be taken to the preview panel.
 
-If you are not, you can press `Tab` on your keyboard or select `Preview` on the top menu bar to examine the paths which your printer will take.
+If not, press `Tab` on your keyboard or select `Preview` in the top menu bar. Here you can examine the paths your printer will follow.
 
 ### Horizontal slider
 
-Horizontal slider represents `Layer progress` this will show you how the extruder moves on the given layer and in which order it is going to extrude material on the printing bed.
+The horizontal slider shows the progress within the current layer. It lets you see how the extruder moves on that layer and in which order it deposits material on the print bed.
 
-You can play this as a timlapse or use your mouse to drag the slider around.
+You can play it back as a timelapse or drag the slider with your mouse.
 
-### Vertical slider
+### Vertical slider
 
-Vertical slider is used to switch between different layers, unlike horizontal slider you can not run the timelapse of layer printing.
+The vertical slider lets you switch between layers. Unlike the horizontal slider, it can't be played back as a timelapse.
 
-Use this slider to examine how the you model will be printed from the inside. You can observe vrious infill patterns as well as supports and inner walls.
+Use this slider to see how your model will be printed on the inside. You can inspect the infill pattern, as well as supports and inner walls.
 
-## Exporting your model
+## Exporting the G-code
 
-Once you are happy with the g-code you can press export to the disk.
+Once you are happy with the result, click `Export G-code file`.
 
-This will show you pop-up with the same file browser as when you were importing you model.
-
-This time around, however, you need to navigate to the location on your computer where you want the `.gcode` file to be saved.
+This opens the same file browser you used when importing your model. This time, navigate to the location on your computer where you want to save the G-code file, then press `Save`.
 
 <figure markdown="span">
-  ![Alt text](../images/printing-and-slicing/exporting-sliced-model.gif){ width="1000" }
-  <figcaption>Image caption</figcaption>
+  ![Exporting the sliced model as a G-code file](../images/printing-and-slicing/exporting-sliced-model.gif){ width="1000" }
+  <figcaption>Exporting the G-code</figcaption>
 </figure>

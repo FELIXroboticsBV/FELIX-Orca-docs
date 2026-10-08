@@ -1,94 +1,90 @@
 # Configuring
 
-In order to start printing you first must configure 4 main settings
+Before you can start printing, you need to configure four main settings:
 
 - Printer
-- Its nozzle size
+- Nozzle size
 - Filament (for each nozzle)
-- Quality preset
+- Quality preset (process)
 
-We will slowly go through each and show you how to do it.
+This guide walks you through each of them. All four settings are located in the leftmost panel of OrcaSlicer, and we will cover them in the order they appear there.
 
-Those settings can be found on the leftmost menu of the orca slicer. We will go through them in the order as displayed in the window.
+## Printers
 
-## Printers
+Once you have added the printers you want to use, you can switch between their configurations using the printer drop-down menu.
 
-If you added printers you want orca to use, you can use the same drop down menu to also select different printer configuration.
-
-If you have not added any our printer to the list, please follow [Adding printers guide](Adding%20printers.md)
+If you haven't added any of our printers yet, follow the [Adding printers guide](Adding%20printers.md) first.
 
 <figure markdown="span">
-  ![Alt text](../images/selecting-printer.gif){ width="1000" }
+  ![Selecting a printer in OrcaSlicer](../images/selecting-printer.gif){ width="1000" }
   <figcaption>Printer configuration pop-up</figcaption>
 </figure>
 
 ## Nozzle sizes
 
-### Double nozzle printers
+### Dual-nozzle printers
 
-Most of our printers come with two nozzles. Unfortunately, orca does not yet intutive selection between various nozzle sizes when printer has two or more nozzles available.
+Most of our printers come with two nozzles. Unfortunately, OrcaSlicer does not yet offer an intuitive way to choose between nozzle sizes on printers with two or more nozzles.
 
-To select configuration with different nozzle diameter you need to click on small rectangular icon with the pen right next to the printer`s name.
+To select a configuration with a different nozzle diameter, click the small rectangular icon with a pen next to the printer's name. This opens a pop-up window showing various printer settings.
 
-This will open a small pop-up window where you can see various printer settings.
-
-On the very top, however, you will see a drop down menu with lot of printers to select from. This is where you have to find the model name of the printer you own and its nozzle size.
+At the very top of this window is a drop-down menu listing many printer configurations. Find the one that matches your printer model and nozzle size.
 
 <figure markdown="span">
-  ![Alt text](../images/filename.png){ width="1000" }
-  <figcaption>Selection of different printers</figcaption>
+  ![Printer selection drop-down in the printer settings pop-up](../images/printing-and-slicing/changin-nozzle-size-double.gif){ width="1000" }
+  <figcaption>Selecting a printer configuration</figcaption>
 </figure>
 
-### Single nozzle printers
+### Single-nozzle printers
 
-For single nozzle printers changing nozzle size is much more straight forward.
+Changing the nozzle size on a single-nozzle printer is much more straightforward.
 
-Only printer with single nozzle is `FOOD Single`. When this printer is selected, you can switch between different nozzle diameters simply by pressing small button right next to the printers name. This button is labeled `Nozzle` and once you click it various nozzle diameters will be revealed. You can switch between them by selecting desired size from the dorp down menu.
+Our only single-nozzle printer is the `FOOD Single`. When it is selected, you can change the nozzle diameter using the small button labeled `Nozzle` next to the printer's name. Click it to reveal the available nozzle diameters, then choose the size you want from the drop-down menu.
 
 <figure markdown="span">
-  ![Alt text](../images/filename.png){ width="1000" }
-  <figcaption>Nozzle selection on single nozzle printers</figcaption>
+  ![Nozzle diameter drop-down for a single-nozzle printer](../images/printing-and-slicing/chaning-nozzle-size.gif){ width="1000" }
+  <figcaption>Nozzle selection on single-nozzle printers</figcaption>
 </figure>
 
 ## Filaments
 
-Thi section is again going to assume that the filament of the printer which we support was loaded.
+This section assumes you have already loaded the filament profiles for your printer.
 
-If you have not done so, you can follow `Filament` section of the [Adding printers guide](Adding%20printers.md)
+If you haven't, follow the `Filament` section of the [Adding printers guide](Adding%20printers.md).
 
 ### Plastic
 
-For a plastic printer we ship various materials presets for different extruder nozzle types. More specifically we support **Brass** and **Hardened steel** variants of each suited for different extruder type.
+For plastic printers, we provide material presets for different nozzle types. Specifically, each material comes in a **Brass** and a **Hardened steel** variant, matching the type of extruder you have installed.
 
-The material can be selected for individual nozzles in the two drop down menus under the **Filament** section. Note that orca uses nozzle _1_ as its default extruder.
+You can select the material for each nozzle individually using the two drop-down menus in the **Filament** section. Note that OrcaSlicer uses nozzle _1_ as its default extruder.
 
 !!! tip
 
-    We have configured our profiles in a way so that you can not select material type which is not supported by the printer.
+    Our profiles are configured so that you can't select a material your printer doesn't support.
 
-    For example food filament can not be selected for plastic printer and vise versa
+    For example, food filaments can't be selected for a plastic printer, and vice versa.
 
-To select the filament click on one of the drop down menus which will show you the drop down with various vendors. However over `FELIX Printers` which will roll up another burger menu through which you can select specific filament type.
-
-<figure markdown="span">
-  ![Alt text](../images/filename.png){ width="1000" }
-  <figcaption>Filament selection double nozzle </figcaption>
-</figure>
-
-For example, when you have a Hardened steel extruded mounted to your printer and you have our premium PLA material you need to select `FELIX Premium PLA Hardened steel` this will configure printing temperatures and all the other settings required for hte successful print.
-
-### Food
-
-Principle with food printers is the same, however instead of concrete material and extruder type you are selecting food thickness AKA viscosity and syringe type you are using.
-
-For more informtaion visit our [Food printing guide](./Food%20printing%20guide.md). This is the table you can use when selecting correct filament preset for the food printers
+To select a filament, click one of the drop-down menus to show the list of vendors. Hover over `FELIX Printers` to open a submenu, then select the specific filament you want.
 
 <figure markdown="span">
-  ![Alt text](../images/filename.png){ width="1000" }
-  <figcaption>Filament selection food printer </figcaption>
+  ![Filament drop-down menu on a dual-nozzle printer](../images/printing-and-slicing/filament-selection-plastic.gif){ width="1000" }
+  <figcaption>Filament selection on a dual-nozzle plastic / food printer</figcaption>
 </figure>
 
-### Basic Plastic: Plastic Syringe
+For example, if you have a hardened steel extruder mounted on your printer and are using our Premium PLA, select `FELIX Premium PLA Hardened steel`. This sets the printing temperatures and all other settings required for a successful print.
+
+### Food
+
+The principle for food printers is the same, but instead of choosing a material and extruder type, you select the thickness of the food (its viscosity) and the type of syringe you are using.
+
+For more information, see our [Food printing guide](./Food%20printing%20guide.md). Use the tables below to choose the correct filament preset for your food printer.
+
+<figure markdown="span">
+  ![Filament drop-down menu on a food printer](../images/printing-and-slicing/filament-selection-food.gif){ width="1000" }
+  <figcaption>Filament selection on a food printer</figcaption>
+</figure>
+
+#### Basic Plastic: Plastic Syringe
 
 | Level | Class     | Viscosity (mPa·s) | Examples                      |
 | :---: | --------- | ----------------- | ----------------------------- |
@@ -96,7 +92,7 @@ For more informtaion visit our [Food printing guide](./Food%20printing%20guide.m
 |   2   | Thin      | 3,000 – 10,000    | Liquid honey, custard         |
 |   1   | Very Thin | 1,000 – 3,000     | Molten chocolate, thick syrup |
 
-### Premium Stainless Steel: Stainless Steel Syringe
+#### Premium Stainless Steel: Stainless Steel Syringe
 
 | Level | Class      | Viscosity (mPa·s) | Examples                               |
 | :---: | ---------- | ----------------- | -------------------------------------- |
@@ -108,15 +104,15 @@ For more informtaion visit our [Food printing guide](./Food%20printing%20guide.m
 
 !!! tip "Example"
 
-    Say, you want to print liquid honey with a stainless steel syringe. To do so, you have to select filament labeled `Food Thin Stainless Steel Syringe`.
+    To print liquid honey with a stainless steel syringe, select the filament labeled `Food Thin Stainless Steel Syringe`.
 
 ## Processes
 
-Process is another name for quality presets, in other words this is where you (or us) evaluate the trade off between details and quality of the print among other things.
+"Process" is OrcaSlicer's term for a quality preset. This is where you (or we, through our presets) balance print detail against print speed, among other things.
 
-### Plastic
+### Plastic
 
-The quality presets come in the following formats each targeting either speed or how detailed the print will be.
+Our plastic quality presets follow the naming pattern below, each favoring either speed or detail:
 
 - FELIX Plastic Very Coarse @ {nozzle diameter} mm
 - FELIX Plastic Coarse @ {nozzle diameter} mm
@@ -125,34 +121,34 @@ The quality presets come in the following formats each targeting either speed or
 - FELIX Plastic Fine @ {nozzle diameter} mm
 - FELIX Plastic Very fine @ {nozzle diameter} mm
 
-From top to bottom the quality of the print increases but with it, also its printing time.
+From top to bottom, print quality increases, but so does printing time.
 
 !!! tip
 
-    The most important setting in the process presets is the `Layer height` which dictates how manly layers should the model have. The more layers it has the more detailed it will be. But as more layers it has the slower the printer will become.
+    The most important setting in a process preset is `Layer height`, which determines how many layers the model is printed with. Thinner layers mean more layers and finer detail, but also a longer print.
 
-    So if you our processes do not match your expectations you can always tweak with the layer height value to get to the desired results.
+    If our presets don't quite match your expectations, you can adjust the layer height to get the results you want.
 
 <figure markdown="span">
-  ![Process slection](../images/filename.png){ width="1000" }
-  <figcaption>Process selection plastic</figcaption>
+  ![Process drop-down menu on a plastic printer](../images/printing-and-slicing/process-selection-plastic.gif){ width="1000" }
+  <figcaption>Process selection on a plastic printer</figcaption>
 </figure>
 
 ### Food
 
-The process of applying various quality controls does not largely differ from the plastic printing. The most important setting is that the supports (structures build by 3D printer in order for the model to not collapse) are disabled.
+Applying quality settings for food printing works much the same way as for plastic. The key difference is that supports (structures the printer builds to keep the model from collapsing) are disabled.
 
-This is because when printing with food, the shape of hte support structure would most definitely interfere / fuse together with the main product you are about to print which would result in a shape that is not desirable. Another reason to disable the support structures is that unlike plastic, most of the foods od not solidify which means that they require support structure even after they have finished printing.
+There are two reasons for this. First, with food, the support structure would almost certainly merge with the product itself, leaving you with an unwanted shape. Second, unlike plastic, most foods don't solidify, so a model printed on supports would still depend on them after printing finished, and they couldn't be removed.
 
-To select different process configuration, simply click on the process drop-down menu and select choose a level of detail from the options presented.
+To select a process, click the process drop-down menu and choose a level of detail:
 
 - FOOD Coarse
 - FOOD Normal
 - FOOD Fine
 
-As withe the plastic printing the quality of the model increases with each quality preset, together with its printing time.
+As with plastic printing, each step up increases print quality along with printing time.
 
 <figure markdown="span">
-  ![Alt text](../images/filename.png){ width="1000" }
-  <figcaption>Process selection on food printer</figcaption>
+  ![Process drop-down menu on a plastic printer](../images/printing-and-slicing/process-selection-food.gif){ width="1000" }
+  <figcaption>Process selection on a plastic printer</figcaption>
 </figure>

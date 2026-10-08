@@ -1,167 +1,169 @@
 # Printing
 
-In this guide we will show you simplified process of importing your model, positioning it on the bed, slicing it and exporting the g-code so that it can be loaded the printer and at the end printed.
+This guide walks you through a simplified workflow: importing your model, positioning it on the bed, slicing it, and exporting the G-code so it can be loaded onto the printer and printed.
 
 ## Configuring the printer
 
-If you haven`t configured your printer yet, please follow the [Adding printers](./Adding%20printers.md) guide.
+If you haven't added your printer yet, follow the [Adding printers](./Adding%20printers.md) guide.
 
-If you have added your printer but did not configure it for hte printing follow [Configuring](./Configuring.md).
+If you have added your printer but haven't configured it for printing yet, follow the [Configuring](./Configuring.md) guide.
 
-### Quick start up
+### Quick start
 
-For the quick set up form 0 to configuring your printer follow those simple steps:
+To go from zero to a fully configured printer, follow these simple steps:
 
-??? tip "Fast star-up guide"
+??? tip "Quick start guide"
 
-    - click on the printer selection drowp down and select `-- Select/Remove printer (from system presets) --`
+    - Click the printer selection drop-down and select `-- Select/Remove printer (from system presets) --`.
 
-    - type `FELIX` into the search bar
+    - Type `FELIX` into the search bar.
 
-    - select printer/s to use in the orca
+    - Select the printer(s) you want to use in OrcaSlicer.
 
-    - press `Next`
+    - Press `Next`.
 
-    - under the `Filament` tab press filament's drop down menu and select `-- Add/Remove filament -- `.
+    - Under the `Filament` tab, open the filament drop-down menu and select `-- Add/Remove filament --`.
 
-    - in the pop-up look for hte correct nozzle / filament type combination provided by FELIX Printers.
+    - In the pop-up, look for the correct nozzle/filament type combination provided by FELIX Printers.
 
-    - select filament(s) you want to use
+    - Select the filament(s) you want to use.
 
-    - in the process tab select the quality process you would like to use. More detailed prints take longer to finish and vice versa.
+    - In the process tab, select the quality preset you would like to use. More detailed prints take longer to finish, and vice versa.
 
-    - you are all set !
+    - You're all set!
 
 ## Importing the model
 
-Orca slicer support various 3D models which it can slice into the instructions for the printer.
+OrcaSlicer supports a variety of 3D model formats, which it slices into instructions for the printer.
 
-There are various ways to impot model you want to print into the orca, but the most straight forward way is by pressing littel cube with a plus next to it inside the top-tool bar panel.
+There are several ways to import a model into OrcaSlicer, but the most straightforward is to click the small cube icon with a plus sign in the top toolbar.
 
-This will bring file explorere dialog which you can use to browes all files in the computer. Use the file browser to navigate to location where you model is downloaded and ither double click on it or select it and press `Open`.
+This opens a file explorer dialog where you can browse the files on your computer. Navigate to the location where your model is saved, then either double-click it or select it and press `Open`.
 
-This should close the file broswer window and show you your model inside the orca.
+The file browser will close, and your model will appear in OrcaSlicer.
 
 <figure markdown="span">
-  ![Alt text](../images/printing-and-slicing/importing-model.gif){ width="1000" }
-  <figcaption>Importing model</figcaption>
+  ![Importing a model into OrcaSlicer](../images/printing-and-slicing/importing-model.gif){ width="1000" }
+  <figcaption>Importing a model</figcaption>
 </figure>
 
-## Position your model.
+## Positioning your model
 
-Positioning your model on the printing bed is done via several controls also available thought the top tool bar menu.
+You can position your model on the print bed using several tools, also available from the top toolbar.
 
 ### Translation (Move)
 
-There are multiple ways how one can position their model on the printing mat.
+There are multiple ways to position your model on the print bed.
 
-**Drag and drop** - model can be simply dragged around the printing bed this operation **is default** when the model is selected. While convenient, precision of the placement is not the best.
+**Drag and drop**
+
+You can simply drag the model around the print bed. This is the **default** behavior when a model is selected. While convenient, it isn't very precise.
 
 <figure markdown="span">
-  ![Alt text](../images/printing-and-slicing/positioning-model-drag-and-drop.gif){ width="1000" }
-  <figcaption>Model positioning</figcaption>
+  ![Dragging a model across the print bed](../images/printing-and-slicing/positioning-model-drag-and-drop.gif){ width="1000" }
+  <figcaption>Positioning a model with drag and drop</figcaption>
 </figure>
 
-**Movement tool**
+**Move tool**
 
 !!! tip
 
-    use `M` on your keyboard to quickly enable the move tool
+    Press `M` on your keyboard to quickly enable the move tool.
 
-Another way to translate the model on the printing plate is through the **move tool**. You can enable movement tool through the top tool box. It has an icon of little square with small arrows pointing to each of the world directions.
+Another way to move the model on the print bed is with the **move tool**. You can enable it from the top toolbar; its icon is a small square with arrows pointing in each of the four directions.
 
-One movement tool is active you will see movement gizmo (three arrows, one pointing to one of the base coordinate system direction `X, Y , Z`)
+Once the move tool is active, you will see the move gizmo: three arrows, each pointing along one axis of the coordinate system (`X`, `Y`, `Z`).
 
-Through the gizmo you can position the model as accurately as possible.
+The gizmo lets you position the model as precisely as you need.
 
 <figure markdown="span">
-  ![Alt text](../images/printing-and-slicing/positioning-model-translation-gizmo.gif){ width="1000" }
-  <figcaption>Showcase of different ways to move your model on the printing mat.</figcaption>
+  ![Moving a model with the move gizmo](../images/printing-and-slicing/positioning-model-translation-gizmo.gif){ width="1000" }
+  <figcaption>Different ways to move your model on the print bed</figcaption>
 </figure>
 
-**Local vs world coordinate space**
+**Local vs. world coordinate space**
 
-You most likely want to use world coordinate system.
+In most cases, you will want to use the world coordinate system.
 
-??? Optional "What are coordinate systems"
+??? Optional "What are coordinate systems?"
 
-    Every point in 3D world needs to be expressed relative to some coordinate system.
+    Every point in a 3D scene has to be expressed relative to some coordinate system.
 
-    When 3D model is being created it is expressed in the `local` coordinate system.
+    When a 3D model is created, it is defined in its own `local` coordinate system.
 
-    However this coordinate system is only useful when one wishes to create the model. The situation changes when you want to place this model to the world. As it happens one coordinate system can be expressed in relation to another coordinate system.
+    That coordinate system is mainly useful while the model is being created. Once you place the model into a scene, its position is expressed relative to another coordinate system: the world coordinate system.
 
-    When altering the position of hte model you most likely always going to use world coordinate system, since as the name suggests this the coordinate system which represents your world AKA where your print will be executed .
+    When positioning a model, you will almost always want the world coordinate system since, as the name suggests, it represents your world, i.e. the print bed where your model will be printed.
 
 ### Rotation
 
-Rotation can be enabled by selecting little square with an arrow orbiting around it.
+To enable rotation, click the icon showing a small square with an arrow orbiting around it.
 
-Once you do, rotation gizmos will appear. They will allow you to rotate your object in one of the 3 main axis of rotation. That is
+Rotation gizmos will appear, allowing you to rotate your object around the three main axes of rotation:
 
-- yaw (around the object`s up direction X)
-- pitch (around the object`s right direction Z)
-- roll (around the forward direction, in our case positive Y )
+- Yaw (around the object's up direction, X)
+- Pitch (around the object's right direction, Z)
+- Roll (around the forward direction, in our case positive Y)
 
-to rotate the object simply drag the desired gizmo in the direction you want to rotate into.
+To rotate the object, drag the desired gizmo in the direction you want to rotate it.
 
 <figure markdown="span">
-  ![Alt text](../images/printing-and-slicing/rotating-the-model.gif){ width="1000" }
-  <figcaption>Video demonstrating rotation </figcaption>
+  ![Rotating a model with the rotation gizmos](../images/printing-and-slicing/rotating-the-model.gif){ width="1000" }
+  <figcaption>Rotating a model</figcaption>
 </figure>
 
 ### Scale
 
-As the name suggests, with this option you can make the smaller smaller or bigger.
+As the name suggests, this tool lets you make your model smaller or bigger.
 
-To enter scaling mode, select the icon with small square enclosed by bigger square with dashed line with arrows connection corners of those two squares.
+To enter scaling mode, click the icon showing a small square inside a larger dashed square, with arrows connecting their corners.
 
-Gizmos for the scaling operation is resembling ones from the 2D image editors. That is, if you drag the corners of the gizmo you will scale the model uniformly in all directions, or you can choose to scale only in one direction (`X` or `Y`).
+The scaling gizmo works much like the ones in 2D image editors. Dragging a corner of the gizmo scales the model uniformly in all directions, while dragging a side scales it in only one direction (`X` or `Y`).
 
 <figure markdown="span">
-  ![Alt text](../images/printing-and-slicing/uniform-scaling-with-gizmos.gif){ width="1000" }
-  <figcaption>Uniform scaling by using gizmos</figcaption>
+  ![Scaling a model uniformly by dragging the gizmo corners](../images/printing-and-slicing/uniform-scaling-with-gizmos.gif){ width="1000" }
+  <figcaption>Uniform scaling using gizmos</figcaption>
 </figure>
 
 <figure markdown="span">
-  ![Alt text](../images/printing-and-slicing/non-unifrom-scaling-with-gizmos.gif){ width="1000" }
-  <figcaption>Non-uniform scaling by using gizmos</figcaption>
+  ![Scaling a model along one axis using the gizmo](../images/printing-and-slicing/non-unifrom-scaling-with-gizmos.gif){ width="1000" }
+  <figcaption>Non-uniform scaling using gizmos</figcaption>
 </figure>
 
 !!! note
 
-    Uniform scaling is scaling operation which affects the model in each directions equally
+    Uniform scaling affects the model equally in every direction.
 
-In the small pop-up you can also scale the model as expressed by percentage. By default model is in 100% scale.
+You can also scale the model by percentage in the small pop-up window. By default, the model is at 100% scale.
 
-If you want model which is half as small you can simply type 50 to the `X`, `Y`, and `Z` boxes. If younifrom scaling is enabled you can type your scale to any of teh 3 boxes and the scale will be applied to the model as a whole .
+For example, to make the model half its size, type 50 into the `X`, `Y`, and `Z` boxes. If uniform scaling is enabled, you can type the value into any one of the three boxes and it will be applied to the whole model.
 
 <figure markdown="span">
-  ![Alt text](../images/printing-and-slicing/uniform-and-non-uniform-percentage.gif){ width="1000" }
-  <figcaption>Uniform and non-uniform scaling by using percentage</figcaption>
+  ![Scaling a model by entering percentage values](../images/printing-and-slicing/uniform-and-non-uniform-percentage.gif){ width="1000" }
+  <figcaption>Uniform and non-uniform scaling using percentages</figcaption>
 </figure>
 
 ### Lay on face
 
-As the name suggests this tool is used to lay model on one of its faces. Orca detects possible faces you can lay your model onto in case of a pentahedron, for example you can select one of hte five faces on which it will lay.
+As the name suggests, this tool lays the model flat on one of its faces. OrcaSlicer detects which faces the model can rest on; for a pentahedron, for example, you can choose any of its five faces.
 
 <figure markdown="span">
-  ![Alt text](../images/printing-and-slicing/lay-on-face.gif){ width="1000" }
-  <figcaption>Using demonstartion of the lay on the face tool </figcaption>
+  ![Using the lay on face tool](../images/printing-and-slicing/lay-on-face.gif){ width="1000" }
+  <figcaption>Demonstration of the lay on face tool</figcaption>
 </figure>
 
-There are also a bit more advanced tools you can use. Such as:
+There are also some more advanced tools you can use, such as:
 
-- cutting whose main job is to cut the selected model just as you would with knife
+- **Cut**, which cuts the selected model just as you would with a knife.
 
-- mesh boolean operations, allows you to preform mesh boolean operations which is basically cutting holes in to the objects with another objects
+- **Mesh boolean**, which lets you perform boolean operations on meshes, such as cutting holes into one object using another.
 
-- painting supports, allows you to paint supports in case automatic supporting did not work for you
+- **Support painting**, which lets you paint supports manually if automatic supports don't work for you.
 
-- and more
+- And more.
 
-For the full list of features consult orca [wiki page](https://www.orcaslicer.com/wiki/print_prepare/prepare_basic.html)
+For the full list of features, see the [OrcaSlicer wiki](https://www.orcaslicer.com/wiki/print_prepare/prepare_basic.html).
 
-!!! Tip
+!!! tip
 
-    Best way to learn each of those tools is to simply experiment with them.
+    The best way to learn these tools is simply to experiment with them.
