@@ -49,3 +49,15 @@ This opens the same file browser you used when importing your model. This time, 
   ![Exporting the sliced model as a G-code file](../images/printing-and-slicing/exporting-sliced-model.gif){ width="1000" }
   <figcaption>Exporting the G-code</figcaption>
 </figure>
+
+!!! Warning
+
+    When slicing with food printers it is possible that the following error will pop-up
+
+    <figure markdown="span">
+      ![Alt text](../images/can-not-print-on-this-plate-error.png){ width="600" }
+      <figcaption>Image caption</figcaption>
+    </figure>
+
+    This is due to the fact that orca slicer is not programmed to support food printers.
+    You can **ignore** this error proceed with the printing
