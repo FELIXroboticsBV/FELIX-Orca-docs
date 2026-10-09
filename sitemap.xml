@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>https://felixroboticsbv.github.io/FELIX-Orca-docs/</loc>
+        <lastmod>2026-10-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://felixroboticsbv.github.io/FELIX-Orca-docs/"/>
+        <xhtml:link rel="alternate" hreflang="nl" href="https://felixroboticsbv.github.io/FELIX-Orca-docs/nl/"/>
+    </url>
+    <url>
+        <loc>https://felixroboticsbv.github.io/FELIX-Orca-docs/Installation/Installation/</loc>
+        <lastmod>2026-10-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://felixroboticsbv.github.io/FELIX-Orca-docs/Installation/Installation/"/>
+        <xhtml:link rel="alternate" hreflang="nl" href="https://felixroboticsbv.github.io/FELIX-Orca-docs/nl/Installation/Installation/"/>
+    </url>
+    <url>
+        <loc>https://felixroboticsbv.github.io/FELIX-Orca-docs/Usage/Adding%20printers/</loc>
+        <lastmod>2026-10-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://felixroboticsbv.github.io/FELIX-Orca-docs/Usage/Adding%20printers/"/>
+        <xhtml:link rel="alternate" hreflang="nl" href="https://felixroboticsbv.github.io/FELIX-Orca-docs/nl/Usage/Adding%20printers/"/>
+    </url>
+    <url>
+        <loc>https://felixroboticsbv.github.io/FELIX-Orca-docs/Usage/Configuring/</loc>
+        <lastmod>2026-10-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://felixroboticsbv.github.io/FELIX-Orca-docs/Usage/Configuring/"/>
+        <xhtml:link rel="alternate" hreflang="nl" href="https://felixroboticsbv.github.io/FELIX-Orca-docs/nl/Usage/Configuring/"/>
+    </url>
+    <url>
+        <loc>https://felixroboticsbv.github.io/FELIX-Orca-docs/Usage/Food%20printing%20guide/</loc>
+        <lastmod>2026-10-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://felixroboticsbv.github.io/FELIX-Orca-docs/Usage/Food%20printing%20guide/"/>
+        <xhtml:link rel="alternate" hreflang="nl" href="https://felixroboticsbv.github.io/FELIX-Orca-docs/nl/Usage/Food%20printing%20guide/"/>
+    </url>
+    <url>
+        <loc>https://felixroboticsbv.github.io/FELIX-Orca-docs/Usage/Printing/</loc>
+        <lastmod>2026-10-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://felixroboticsbv.github.io/FELIX-Orca-docs/Usage/Printing/"/>
+        <xhtml:link rel="alternate" hreflang="nl" href="https://felixroboticsbv.github.io/FELIX-Orca-docs/nl/Usage/Printing/"/>
+    </url>
+    <url>
+        <loc>https://felixroboticsbv.github.io/FELIX-Orca-docs/Usage/Slicing/</loc>
+        <lastmod>2026-10-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://felixroboticsbv.github.io/FELIX-Orca-docs/Usage/Slicing/"/>
+        <xhtml:link rel="alternate" hreflang="nl" href="https://felixroboticsbv.github.io/FELIX-Orca-docs/nl/Usage/Slicing/"/>
+    </url>
+    <url>
+        <loc>https://felixroboticsbv.github.io/FELIX-Orca-docs/nl/</loc>
+        <lastmod>2026-10-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="nl" href="https://felixroboticsbv.github.io/FELIX-Orca-docs/nl/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://felixroboticsbv.github.io/FELIX-Orca-docs/"/>
+    </url>
+    <url>
+        <loc>https://felixroboticsbv.github.io/FELIX-Orca-docs/nl/Installation/Installation/</loc>
+        <lastmod>2026-10-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="nl" href="https://felixroboticsbv.github.io/FELIX-Orca-docs/nl/Installation/Installation/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://felixroboticsbv.github.io/FELIX-Orca-docs/Installation/Installation/"/>
+    </url>
+    <url>
+        <loc>https://felixroboticsbv.github.io/FELIX-Orca-docs/nl/Usage/Adding%20printers/</loc>
+        <lastmod>2026-10-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="nl" href="https://felixroboticsbv.github.io/FELIX-Orca-docs/nl/Usage/Adding%20printers/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://felixroboticsbv.github.io/FELIX-Orca-docs/Usage/Adding%20printers/"/>
+    </url>
+    <url>
+        <loc>https://felixroboticsbv.github.io/FELIX-Orca-docs/nl/Usage/Configuring/</loc>
+        <lastmod>2026-10-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="nl" href="https://felixroboticsbv.github.io/FELIX-Orca-docs/nl/Usage/Configuring/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://felixroboticsbv.github.io/FELIX-Orca-docs/Usage/Configuring/"/>
+    </url>
+    <url>
+        <loc>https://felixroboticsbv.github.io/FELIX-Orca-docs/nl/Usage/Food%20printing%20guide/</loc>
+        <lastmod>2026-10-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="nl" href="https://felixroboticsbv.github.io/FELIX-Orca-docs/nl/Usage/Food%20printing%20guide/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://felixroboticsbv.github.io/FELIX-Orca-docs/Usage/Food%20printing%20guide/"/>
+    </url>
+    <url>
+        <loc>https://felixroboticsbv.github.io/FELIX-Orca-docs/nl/Usage/Printing/</loc>
+        <lastmod>2026-10-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="nl" href="https://felixroboticsbv.github.io/FELIX-Orca-docs/nl/Usage/Printing/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://felixroboticsbv.github.io/FELIX-Orca-docs/Usage/Printing/"/>
+    </url>
+    <url>
+        <loc>https://felixroboticsbv.github.io/FELIX-Orca-docs/nl/Usage/Slicing/</loc>
+        <lastmod>2026-10-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="nl" href="https://felixroboticsbv.github.io/FELIX-Orca-docs/nl/Usage/Slicing/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://felixroboticsbv.github.io/FELIX-Orca-docs/Usage/Slicing/"/>
+    </url>
+</urlset>
